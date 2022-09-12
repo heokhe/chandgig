@@ -1,0 +1,38 @@
+{
+  "name": "chandgig",
+  "version": "1.0.0",
+  "description": "Data size units in Farsi",
+  "type": "module",
+  "source": "index.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "prepublishOnly": "npm run build",
+    "test": "tap --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heokhe/chandgig.git"
+  },
+  "author": "Hosein Khansari <hrk.x11@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heokhe/chandgig/issues"
+  },
+  "homepage": "https://github.com/heokhe/chandgig#readme",
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "tap": "^16.3.0"
+  },
+  "dependencies": {
+    "farsi-digits": "^4.0.0"
+  }
+}
