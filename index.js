@@ -44,5 +44,3 @@ export function chandgig(
     convertZeroToWord,
   })} ${unit}`
 }
-
-console.log(chandgig(96636764160))
